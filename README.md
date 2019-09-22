@@ -6,6 +6,8 @@ Notes, comments and logs are placed in the SCSS-file, and not in the mark-up.
 By using shorthand names the markup is reduced.
 
 
+
+
 Legal semantic names for elements are:
 
 * Header (class "header" or "hrd")
@@ -17,12 +19,16 @@ Legal semantic names for elements are:
 * Aside (class "aside" or "asd")
 
 
+
+
 Legal markup elements are: 
 
 * Div (class "div")
 * Span(class "span")
 * P (class "p")
 * A (class "a")
+
+
 
 
 Legal functional names for elements are:
@@ -36,13 +42,17 @@ Legal functional names for elements are:
 * Component ("component" or "cmp")
 * Element ("element" or "elm")
 * Item ("item" or "itm")
-* Group ("group" or "grp")Loop ("loop" or "lp")
-* List ("list" or "lt")Form ("form" or "frm")
+* Group ("group" or "grp")
+* Loop ("loop" or "lp")
+* List ("list" or "lt")
+* Form ("form" or "frm")
 * Search ("search" or "srch")
 * Sector ("sector" or "sct")
 * Shorttext ("shorttext" or "shrtx")
 * Text ("Text" or "txt")
 * View ("View" or "vw")
+
+
 
 
 Legal names for sub elements are:
@@ -53,6 +63,8 @@ Legal names for sub elements are:
 * Content ("content" or "cont")
 * Container ("container" or "con")
 * Division ("division" or "div")
+
+
 
 
 Legal names for utility classes are:
