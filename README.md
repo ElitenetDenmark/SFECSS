@@ -120,7 +120,7 @@ In the SCSS, we document the usage of the content component, this way the docume
 * recommended products in basket
 **/
 .cont-1 {
-sgmt-1 {
+.sgmt-1 {
 }
 }
 
