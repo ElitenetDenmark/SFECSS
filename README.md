@@ -109,3 +109,19 @@ We can then reduce the markup by using SFECSS short names:
 <p class="sgmt-1">text</p>
 </div>
 ```
+
+In the SCSS, we document the usage of the content component, this way the documentation and logic is removed from the mark-up.
+
+```
+/**
+* Content container used on
+* frontpage
+* productlist
+* recommended products in basket
+**/
+.cont-1 {
+sgmt-1 {
+}
+}
+
+```
