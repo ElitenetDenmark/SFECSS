@@ -6,7 +6,7 @@ Notes, comments and logs are placed in the SCSS-file, and not in the mark-up.
 By using shorthand names the markup is reduced.
 
 
-
+##  Legal names
 
 Legal semantic names for elements are:
 
@@ -71,7 +71,7 @@ Legal names for utility classes are:
 
 * t-l (text-alignment left)
 * f-l (float left)
-* u-cl (uppercase)
+* upc (uppercase)
 * ht (header type)
 * ft (font-type)
 * color (or "clr")
@@ -80,7 +80,7 @@ Legal names for utility classes are:
 
 
 
-##Usage
+## Usage
 
 Before
 ```
