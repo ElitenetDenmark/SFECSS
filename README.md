@@ -8,19 +8,6 @@ By using shorthand names the markup is reduced.
 
 ##  Legal names
 
-Legal semantic names for elements are:
-
-* Header (class "header" or "hrd")
-* Footer (class "footer" or "ftr")
-* Main (class "main")
-* Nav (class "nav")
-* Article (class "article" or "artc")
-* Section (class "section" or "sect")
-* Aside (class "aside" or "asd")
-
-
-
-
 Legal markup elements are: 
 
 * Div (class "div")
@@ -29,50 +16,62 @@ Legal markup elements are:
 * A (class "a")
 
 
+Legal semantic names for primary elements are:
+
+* Article (class "article" or "artc")
+* Aside (class "aside" or "asd")
+* Details ("details" or "dtl")
+* Figure ("figure" or "fgr")
+* Footer (class "footer" or "ftr")
+* Header (class "header" or "hrd")
+* Main (class "main")
+* Nav (class "nav")
+* Section (class "section" or "sect")
 
 
-Legal functional names for elements are:
+Legal functional names for primary elements are:
 
 * Area ("area" or "ar")
-* Layout ("Layout" or "layt")
-* Page ("page" or "pg")
 * Deco ("deco" or "dc")
-* Detail ("detail" or "dtl")
+* Layout ("layout" or "layt")
+* Page ("page" or "pg")
 * Container ("container" or "con")
 * Content ("content" or "cont")
-* Component ("component" or "cmp")
-* Element ("element" or "elm")
-* Item ("item" or "itm")
-* Group ("group" or "grp")
-* Loop ("loop" or "lp")
-* List ("list" or "lt")
-* Form ("form" or "frm")
+* Root ("root")
 * Search ("search" or "srch")
 * Sector ("sector" or "sct")
-* Shorttext ("shorttext" or "shrtx")
-* Summary ("summary" or "smry")
-* Text ("Text" or "txt")
-* View ("View" or "vw")
+* View ("view" or "vw")
+* Wrapper ("wrapper" or "wrpr")
 
 
 
 
 Legal names for sub elements are:
 
-* Subdivision ("subdivision" or "subd")
-* Segment ("segment" or "sgmt")
+* Component ("component" or "cmp")
+* Division ("division" or "divs")
+* Element ("element" or "elm")
+* Form ("form" or "frm")
+* Group ("group" or "grp")
 * Item ("item" or "itm")
-* Content ("content" or "cont")
-* Container ("container" or "con")
-* Division ("division" or "div")
-
+* List ("list" or "lt")
+* Loop ("loop" or "lp")
+* Segment ("segment" or "sgmt")
+* Subarea ("subarea" or "subar")
+* Subdivision ("subdivision" or "subd")
+* Subheader ("subheader" or "subhrd")
+* Subitem ("subitem" or "subit")
+* Subsegment ("subsegment" or "subsg")
+* Subcomponent ("subcomponent" or "subcomp")
+* Subsector ("subsector" or "subsct")
+* Summary ("summary" or "smry")
 
 
 
 Legal names for utility classes are:
 
-* t-l (text-alignment left)
-* f-l (float left)
+* tl (text-alignment left)
+* fl (float left)
 * upc (uppercase)
 * ht (header type)
 * ft (font-type)
@@ -96,7 +95,10 @@ So the "frontpage__list_item" might suddenly be product list, category or someth
 
 We are not interested in position or sizes that might change later, so we rename by using SFECSS names.
 Since the content is the first content block on the webpage, we name it "content-1".
+
+Some elements are sub elements and they are named as such.
 The sub element can be name "segment-1" as it is the first sub segment in the "content-1"
+
 
 ```
 <div class="content-1">
@@ -112,7 +114,7 @@ We can then reduce the markup by using SFECSS short names:
 </div>
 ```
 
-In the SCSS, we document the usage of the content component, this way the documentation and logic is removed from the mark-up.
+In the SCSS, we document the usage of the content component, this way the documentation and logics are removed from the mark-up.
 
 ```
 /**
@@ -121,9 +123,61 @@ In the SCSS, we document the usage of the content component, this way the docume
 * productlist
 * recommended products in basket
 **/
-.cont-1 {
-.sgmt-1 {
+.container-1 {
+.segment-1 {
+}
+.segment-2 {
 }
 }
+```
+
+We know the "segment" is a sub element, so there must be a legal name for the head element
 
 ```
+<div class="container-1">
+<p class="segment-1">text</p>
+</div>
+```
+
+Or just enclose the whole css area, without numbering the sub elements. We can always find way to the primary element, since there are many sub element names.
+
+```
+/**
+* Content container used on
+* frontpage
+* productlist
+* recommended products in basket
+**/
+.main-2 {
+.segment {
+}
+.detail {
+}
+}
+}
+```
+
+Advanced setup
+```
+<div class="container-1">
+<div class="segment">segment
+<div class="subsegment-1"></div>
+<div class="subsegment-2">
+<span class="subitem"></span>
+</div>
+</div>
+</div>
+```
+
+Advanced setup shortened
+```
+<div class="cont-1">
+<div class="sgmt">
+<div class="subsct-1"></div>
+<div class="subsct-2">
+<span class="subit"></span>
+</div>
+</div>
+</div>
+```
+

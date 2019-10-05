@@ -1,8 +1,79 @@
-
-
 /*
  * Global SCSS file
  * Utilities, fonts, styles, globals
  * Don't publish this file
  *
 */
+
+
+/* RESETS
+ */
+html,
+body {
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+ color: black;
+}
+
+/* UTILITIES 
+*/
+.upc {
+ text-transform: uppercase;
+}
+
+.b {
+ font-weight: bold;
+}
+
+.tl {
+ text-align: left;
+}
+
+.tr {
+ text-align: right;
+}
+
+/* LINK COLORS
+*/
+.lclr {
+ &-1:link,
+ &-1:active,
+ &-1:visited,
+ &-1:hover {
+  color: white;
+ }
+}
+
+/* FONTTYPES
+*/
+.ft-1 {
+}
+
+.ft-2 {
+}
+
+/* HEADERS
+*/
+.ht-1 {
+}
+
+.ht-2 {
+}
+
+// BACKGROUND COLOR
+.bgclr-1 {
+}
+
+.bgclr-2 {
+}
+
+// ANIMATIONS
+// Animation class 1 font-size 0.5 sec
+.anim-1 {
+ transition: font-size, 0.5s;
+ transition-timing-function: linear;
+}
