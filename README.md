@@ -17,6 +17,7 @@ Legal markup elements are:
 
 
 Legal semantic names for primary elements are:
+See W3 HTML5 Guide for their semantic use
 
 * Article (class "article" or "artc")
 * Aside (class "aside" or "asd")
@@ -32,7 +33,12 @@ Legal semantic names for primary elements are:
 Legal functional names for primary elements are:
 
 * Area ("area" or "ar")
+* Bin ("bin")
+* Box ("box")
+* Composition ("composition" or "compo")
 * Deco ("deco" or "dc")
+* Document ("document" or "docm")
+* Hero ("hero" or "hro")
 * Layout ("layout" or "layt")
 * Page ("page" or "pg")
 * Container ("container" or "con")
@@ -41,6 +47,7 @@ Legal functional names for primary elements are:
 * Search ("search" or "srch")
 * Sector ("sector" or "sct")
 * View ("view" or "vw")
+* Zone ("zone" or "zn")
 * Wrapper ("wrapper" or "wrpr")
 
 
@@ -48,6 +55,8 @@ Legal functional names for primary elements are:
 
 Legal names for sub elements are:
 
+* Branch ("branch" or "brnc")
+* Cast ("cast" or "cst")
 * Component ("component" or "cmp")
 * Division ("division" or "divs")
 * Element ("element" or "elm")
@@ -56,6 +65,7 @@ Legal names for sub elements are:
 * Item ("item" or "itm")
 * List ("list" or "lt")
 * Loop ("loop" or "lp")
+* Part ("part" or "prt")
 * Segment ("segment" or "sgmt")
 * Subarea ("subarea" or "subar")
 * Subdivision ("subdivision" or "subd")
@@ -160,7 +170,7 @@ Or just enclose the whole css area, without numbering the sub elements. We can a
 Advanced setup
 ```
 <div class="container-1">
-<div class="segment">segment
+<div class="segment">
 <div class="subsegment-1"></div>
 <div class="subsegment-2">
 <span class="subitem"></span>
@@ -172,10 +182,11 @@ Advanced setup
 Advanced setup shortened
 ```
 <div class="cont-1">
+<div class="subhrd ht-1 fl">This is a title</div>
 <div class="sgmt">
-<div class="subsct-1"></div>
+<div class="subsct-1 ft-1">Also a title</div>
 <div class="subsct-2">
-<span class="subit"></span>
+<span class="subit ft-2">Description</span>
 </div>
 </div>
 </div>
