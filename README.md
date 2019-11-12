@@ -44,6 +44,7 @@ Legal functional names for primary elements are:
 * Container ("container" or "con")
 * Content ("content" or "cont")
 * Root ("root")
+* Scene ("scn")
 * Search ("search" or "srch")
 * Sector ("sector" or "sct")
 * View ("view" or "vw")
